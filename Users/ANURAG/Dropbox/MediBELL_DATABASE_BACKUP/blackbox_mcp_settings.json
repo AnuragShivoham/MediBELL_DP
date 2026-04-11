@@ -1,0 +1,8 @@
+{
+  "servers": {
+    "github.com/czlonkowski/n8n-mcp": {
+      "name": "n8n-mcp",
+      "description": "n8n Model Context Protocol server for n8n node documentation and workflow automation"
+    }
+  }
+}

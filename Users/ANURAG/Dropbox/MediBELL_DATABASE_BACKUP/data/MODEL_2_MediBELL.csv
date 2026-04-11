@@ -1,0 +1,101 @@
+gender,disease,Daily Activity Level,Current Device (health device)use,Device Name,Medicines Taken,PhysicalActivity(you do),Your_Sleep_Hours,How Often you consume Packed foods,"You consume sugar, salty or spicy foods more often.",Diet (if you have),Average Water Intake (in liters/day),?? Sleep Behavior,Screen_Time_Hours,Smoking/Alcohol_Consumption (Yes/No),Currently_Taking_Medicine (Yes/No),Multiple choice: Running / Gym / Yoga / Cycling / None / Other,Suggestions for health wearable devices.,Walk / Bike / Public Transport / Car / Other,Meal_Pattern,Breakfast_Habit,Medication_Reminder_Need,Medicine & Routine Compliance,Health Tracking Awareness,Live_Alone(because stress),Date_of_Birth
+M,Hypertension,High,Yes,Glucometer,Insulin,Yoga,7,Daily,Salty,Mediterranean,1.27,Insomnia,9.9,Yes,Yes,Gym,Help with stress monitoring,Public Transport,Intermittent fasting,Sometimes skipped,Yes,Low,Good,Yes,31-01-1969
+Other,Healthy,High,No,Fireboult,None,Gym,4.4,Sometimes,Neutral,Keto,2.52,Normal,1.5,Yes,No,Running,Sleep tracking,Walk,Multiple small meals,Never,No,Low,Average,No,15-11-1966
+Other,Thyroid,High,Yes,Apple Watch,Insulin,Cycling,5.6,Never,Salty,Normal,3.32,Oversleeping,3.9,Yes,Yes,None,Smaller form factor,Bike,Multiple small meals,Only beverage,No,Moderate,Low,Yes,15-02-1957
+Other,COPD,Moderate,No,Fireboult,None,Yoga,6.5,Never,Sugar,Vegan,2.7,Oversleeping,7.6,No,No,Cycling,Battery life improvement,Other,3 meals/day,Regular,No,Low,Good,No,02-01-1974
+Other,Thyroid,Low,Yes,Garmin,None,Walking,5.9,Rarely,Neutral,Normal,2.6,Oversleeping,1.2,No,No,Yoga,Sleep tracking,Walk,2 meals/day,Regular,Yes,Unknown,Good,Yes,09-07-1946
+F,COPD,Moderate,Yes,Xiaomi Band,None,Cycling,5.9,Daily,Mixed,Vegetarian,1.37,Normal,4.7,Yes,No,Running,BP alerts,Walk,2 meals/day,Regular,Yes,Low,Good,Yes,26-12-1959
+M,COPD,Moderate,Yes,Samsung Galaxy Watch,Levothyroxine,Running,6.1,Often,Sugar,Vegetarian,0.71,Insomnia,9.8,Yes,Yes,Gym,Sleep tracking,Bike,Multiple small meals,Sometimes skipped,No,Moderate,Low,No,30-05-1957
+M,Thyroid,Low,Yes,Xiaomi Band,Insulin,Swimming,6,Never,Salty,Mediterranean,0.51,Oversleeping,3.9,No,Yes,Yoga,Help with stress monitoring,Other,Multiple small meals,Sometimes skipped,Yes,Low,Average,Yes,17-12-1986
+M,High Cholesterol,High,Yes,None,None,None,7,Rarely,Mixed,Vegetarian,3.8,Interrupted,7.4,Yes,No,Cycling,Smaller form factor,Public Transport,2 meals/day,Never,Yes,Low,None,Yes,05-04-1995
+M,COPD,High,Yes,Fitbit,None,Walking,8.7,Never,Salty,Keto,1.5,Oversleeping,10.2,No,No,Other,More accurate heart-rate,Other,Intermittent fasting,Regular,Yes,Low,Good,Yes,09-08-2001
+F,Depression,Low,No,Fireboult,None,None,7.2,Sometimes,Sugar,Normal,1.67,Interrupted,8,No,Yes,Cycling,Help with stress monitoring,Other,3 meals/day,Regular,Yes,Moderate,Good,No,05-04-1987
+M,Depression,Low,No,Fireboult,Metformin,Running,7.9,Often,Neutral,Vegan,3.74,Interrupted,10.5,Yes,Yes,Cycling,More accurate heart-rate,Bike,Intermittent fasting,Only beverage,Yes,Low,Average,Yes,27-04-1969
+M,Depression,Moderate,Yes,Xiaomi Band,Salbutamol,Running,8.3,Sometimes,Spicy,Mediterranean,2.88,Insomnia,11.3,Yes,Yes,Yoga,Glucose alerts,Other,Intermittent fasting,Regular,Yes,Unknown,Low,No,24-02-1974
+F,Heart Disease,Low,No,Fireboult,None,Yoga,7.4,Rarely,Spicy,Mediterranean,0.74,Insomnia,7.9,Yes,No,Yoga,Battery life improvement,Car,Intermittent fasting,Only beverage,No,Moderate,Average,No,27-08-1994
+Other,Thyroid,Low,No,Fireboult,Salbutamol,Gym,6.2,Rarely,Neutral,Other,3.28,Interrupted,8.2,No,Yes,None,Smaller form factor,Walk,2 meals/day,Never,Yes,Moderate,Average,Yes,23-02-1939
+M,None,High,Yes,Glucometer,None,Swimming,8.3,Never,Mixed,Low Sodium,1.12,Oversleeping,1.6,Yes,No,Running,None,Bike,Multiple small meals,Never,No,Unknown,None,Yes,19-09-2001
+M,Heart Disease,High,No,Fireboult,Atorvastatin,Walking,5.4,Sometimes,Neutral,Vegetarian,0.98,Interrupted,5.2,Yes,Yes,Other,Sleep tracking,Walk,Multiple small meals,Only beverage,No,Unknown,None,Yes,22-07-1953
+Other,COPD,Moderate,No,Fireboult,Levothyroxine,Swimming,8.5,Often,Neutral,Low Sodium,2.21,Insomnia,5.8,Yes,Yes,Cycling,Smaller form factor,Car,2 meals/day,Only beverage,Yes,High,None,Yes,13-07-1942
+M,Arthritis,Moderate,Yes,Samsung Galaxy Watch,None,Gym,5.4,Often,Spicy,Vegetarian,2.15,Normal,12,No,Yes,Running,More accurate heart-rate,Walk,2 meals/day,Sometimes skipped,Yes,Moderate,Average,Yes,26-06-1977
+F,Depression,Low,Yes,Apple Watch,None,Running,6.9,Often,Mixed,Low Sodium,0.77,Interrupted,2.1,No,No,None,BP alerts,Other,3 meals/day,Never,No,Low,Good,No,19-02-1936
+F,High Cholesterol,High,Yes,Glucometer,None,Cycling,5.4,Daily,Mixed,Other,2.02,Insomnia,4.5,Yes,No,Running,Battery life improvement,Car,2 meals/day,Only beverage,No,Low,Good,No,06-05-2011
+M,Heart Disease,Moderate,No,Fireboult,None,Yoga,8.7,Never,Salty,Mediterranean,2.21,Interrupted,8.6,No,No,Running,BP alerts,Public Transport,2 meals/day,Only beverage,Yes,Low,Low,No,27-08-1984
+Other,Depression,High,No,Fireboult,Metformin,Cycling,5,Never,Neutral,Vegan,1.17,Oversleeping,4,No,Yes,Running,Sleep tracking,Public Transport,2 meals/day,Never,Yes,Low,Good,Yes,11-08-1959
+F,None,Moderate,Yes,None,Amlodipine,Running,4.9,Never,Spicy,Other,0.9,Normal,5.4,Yes,Yes,None,More accurate heart-rate,Bike,2 meals/day,Never,Yes,Moderate,Good,No,24-05-1989
+Other,High Cholesterol,Moderate,No,Fireboult,None,Yoga,8.8,Never,Salty,Low Sodium,1.43,Normal,2.7,Yes,No,Gym,More accurate heart-rate,Car,Multiple small meals,Only beverage,No,High,Average,No,04-06-1998
+Other,None,High,Yes,Glucometer,Lisinopril,Running,8.1,Never,Sugar,Vegan,3.27,Insomnia,5.8,No,Yes,Other,Battery life improvement,Car,Intermittent fasting,Only beverage,No,High,Good,No,24-11-2000
+M,None,High,Yes,Garmin,None,Walking,6.4,Often,Spicy,Vegan,3.99,Oversleeping,8,No,No,Cycling,Smaller form factor,Car,Intermittent fasting,Never,Yes,Moderate,Low,No,26-03-1997
+Other,Hypertension,Moderate,No,Fireboult,None,Gym,8.3,Never,Neutral,Other,1.95,Interrupted,6.7,No,No,Running,Sleep tracking,Public Transport,2 meals/day,Never,No,Unknown,Good,Yes,10-07-1991
+F,Thyroid,Moderate,Yes,Xiaomi Band,Metformin,Cycling,8.2,Often,Spicy,Low Sugar,1.95,Oversleeping,11.8,Yes,Yes,Cycling,Glucose alerts,Car,2 meals/day,Sometimes skipped,Yes,Low,None,No,01-09-2005
+F,COPD,High,No,Fireboult,None,Running,5.7,Daily,Mixed,Other,3.76,Interrupted,11.8,Yes,No,Gym,Help with stress monitoring,Walk,Intermittent fasting,Only beverage,No,Unknown,Average,No,28-04-1938
+F,High Cholesterol,Low,No,Fireboult,Lisinopril,None,6.3,Sometimes,Spicy,Mediterranean,2.77,Insomnia,10.4,No,Yes,Yoga,None,Other,3 meals/day,Regular,Yes,Low,Average,Yes,07-12-1973
+M,Healthy,Low,No,Fireboult,Levothyroxine,Walking,5.2,Often,Neutral,Vegan,1.09,Normal,7.7,No,Yes,None,Sleep tracking,Car,2 meals/day,Sometimes skipped,No,Low,None,No,29-10-1994
+Other,Hypertension,Moderate,No,Fireboult,None,Gym,7.5,Often,Spicy,Low Sodium,4,Oversleeping,2.2,No,No,None,Battery life improvement,Public Transport,3 meals/day,Only beverage,No,High,Good,No,19-09-2009
+F,Asthma,High,No,Fireboult,None,Cycling,7.2,Sometimes,Mixed,Normal,2.53,Interrupted,2,No,No,Cycling,Glucose alerts,Bike,2 meals/day,Never,No,Moderate,Low,No,10-05-2007
+F,Asthma,High,No,Fireboult,Levothyroxine,None,5.3,Never,Mixed,Keto,2.85,Insomnia,7.4,No,Yes,Running,Sleep tracking,Car,3 meals/day,Never,Yes,High,None,No,31-03-1993
+M,High Cholesterol,Low,Yes,Xiaomi Band,Salbutamol,Cycling,8.7,Daily,Mixed,Vegan,3.6,Normal,10.2,No,Yes,Yoga,More accurate heart-rate,Public Transport,2 meals/day,Only beverage,No,Moderate,Low,Yes,07-07-1996
+M,Asthma,Low,No,Fireboult,None,None,7.9,Rarely,Salty,Low Sodium,0.74,Interrupted,7.5,Yes,No,Gym,More accurate heart-rate,Public Transport,2 meals/day,Sometimes skipped,No,Moderate,Good,Yes,28-10-1946
+Other,Diabetes,Moderate,Yes,Apple Watch,Metformin,Gym,6.2,Sometimes,Neutral,Vegetarian,2.08,Interrupted,11.4,Yes,Yes,Other,Battery life improvement,Car,3 meals/day,Regular,No,Unknown,None,Yes,26-12-1978
+F,Hypertension,Low,No,Fireboult,None,Running,5.9,Daily,Neutral,Low Sugar,2.09,Oversleeping,2.1,Yes,No,Other,Sleep tracking,Car,Multiple small meals,Sometimes skipped,No,Low,None,No,27-04-1972
+F,Depression,Low,No,Fireboult,None,None,6.2,Sometimes,Salty,Normal,2.55,Insomnia,8.4,No,No,Other,Help with stress monitoring,Walk,Intermittent fasting,Never,No,High,Average,Yes,01-12-1993
+F,Depression,Low,No,Fireboult,None,Swimming,6.8,Daily,Neutral,Normal,2.63,Insomnia,1.3,No,No,Yoga,Smaller form factor,Public Transport,3 meals/day,Sometimes skipped,Yes,Unknown,Good,Yes,23-06-2001
+M,High Cholesterol,Moderate,Yes,Oximeter,Metformin,None,4.8,Daily,Sugar,Vegetarian,1.45,Oversleeping,6.3,No,Yes,Cycling,Battery life improvement,Bike,3 meals/day,Never,No,High,Low,No,10-04-1982
+F,Healthy,Low,No,Fireboult,None,Running,5.6,Never,Mixed,Mediterranean,1.11,Oversleeping,6.9,Yes,No,Other,Smaller form factor,Walk,Multiple small meals,Regular,No,High,None,Yes,05-05-2012
+Other,None,Moderate,No,Fireboult,Salbutamol,Walking,8,Daily,Mixed,Keto,0.81,Normal,3.7,No,Yes,None,BP alerts,Car,Intermittent fasting,Never,Yes,Low,Average,Yes,18-10-1980
+M,Depression,High,Yes,Xiaomi Band,Lisinopril,Yoga,4.8,Never,Salty,Other,2.12,Oversleeping,8.5,No,Yes,Other,Smaller form factor,Bike,Multiple small meals,Regular,No,Unknown,Low,No,22-01-1988
+M,High Cholesterol,Low,Yes,Oximeter,None,Swimming,4.5,Daily,Neutral,Mediterranean,2.12,Normal,5.9,Yes,No,Cycling,Glucose alerts,Walk,Multiple small meals,Regular,No,High,Average,Yes,24-03-1957
+Other,Depression,Moderate,No,Fireboult,None,Cycling,7,Sometimes,Sugar,Keto,0.83,Oversleeping,4.1,Yes,No,None,Glucose alerts,Public Transport,Intermittent fasting,Only beverage,Yes,High,Low,No,23-09-1992
+M,Arthritis,High,No,Fireboult,Insulin,Running,8.7,Often,Salty,Low Sodium,4,Interrupted,1.8,Yes,Yes,None,More accurate heart-rate,Public Transport,2 meals/day,Only beverage,Yes,Moderate,Average,Yes,13-09-1999
+F,Asthma,Moderate,No,Fireboult,Insulin,Running,8.8,Often,Salty,Keto,2.87,Oversleeping,6.1,No,Yes,Cycling,Help with stress monitoring,Bike,2 meals/day,Sometimes skipped,No,High,None,No,01-10-1984
+F,Diabetes,Moderate,No,Fireboult,None,None,8.7,Rarely,Mixed,Keto,3.76,Oversleeping,1.6,No,Yes,Running,Smaller form factor,Bike,3 meals/day,Never,Yes,Low,Average,Yes,09-06-1938
+Other,COPD,Low,Yes,None,None,Yoga,8.7,Daily,Neutral,Mediterranean,0.89,Insomnia,3.6,Yes,Yes,Cycling,None,Walk,3 meals/day,Only beverage,Yes,Moderate,Average,No,05-07-1973
+M,Diabetes,High,Yes,Oximeter,None,Yoga,7.9,Daily,Neutral,Normal,1.87,Oversleeping,1.5,No,No,Yoga,More accurate heart-rate,Public Transport,3 meals/day,Never,Yes,High,Low,Yes,23-12-1938
+Other,None,Moderate,No,Fireboult,Amlodipine,None,5.5,Never,Salty,Normal,1.6,Insomnia,6.7,No,Yes,Yoga,More accurate heart-rate,Bike,Intermittent fasting,Never,Yes,Low,Low,Yes,17-09-2006
+Other,Depression,Low,No,Fireboult,None,Yoga,5.3,Never,Mixed,Vegetarian,2.01,Interrupted,7,No,Yes,Yoga,Battery life improvement,Public Transport,Multiple small meals,Only beverage,Yes,Unknown,Low,No,19-10-1938
+F,Healthy,Low,No,Fireboult,None,Cycling,4.8,Never,Salty,Other,0.62,Normal,3.6,No,No,None,More accurate heart-rate,Other,2 meals/day,Only beverage,No,Low,None,Yes,28-06-1986
+F,Heart Disease,Low,Yes,None,None,Yoga,4.6,Sometimes,Mixed,Low Sodium,3.99,Insomnia,8.6,No,Yes,Gym,BP alerts,Car,2 meals/day,Only beverage,Yes,Low,Low,Yes,05-05-1984
+M,None,Low,No,Fireboult,Insulin,Swimming,4.7,Often,Sugar,Keto,2.44,Insomnia,6.1,Yes,Yes,None,BP alerts,Walk,Intermittent fasting,Only beverage,No,Unknown,None,Yes,30-03-1946
+F,Depression,Low,Yes,Apple Watch,None,None,8.2,Daily,Salty,Low Sugar,1.08,Insomnia,11.3,Yes,No,None,Battery life improvement,Walk,Intermittent fasting,Sometimes skipped,No,Moderate,Low,Yes,02-02-1980
+M,COPD,High,No,Fireboult,None,None,4.2,Daily,Spicy,Low Sodium,3.18,Oversleeping,7.8,Yes,No,Other,Battery life improvement,Public Transport,Multiple small meals,Sometimes skipped,No,Low,None,Yes,11-10-1996
+F,Asthma,Moderate,Yes,Oximeter,None,Swimming,5.7,Often,Salty,Keto,2.3,Normal,4.5,No,Yes,Cycling,Sleep tracking,Bike,3 meals/day,Regular,No,Unknown,None,Yes,18-08-2012
+Other,Diabetes,Moderate,No,Fireboult,None,None,8.7,Daily,Mixed,Low Sodium,1.25,Insomnia,1.5,No,No,Other,None,Public Transport,3 meals/day,Regular,No,Moderate,Low,No,13-07-2003
+F,Thyroid,Low,No,Fireboult,Amlodipine,Swimming,6.7,Daily,Neutral,Vegetarian,0.95,Normal,5.3,No,Yes,None,Smaller form factor,Bike,2 meals/day,Only beverage,Yes,High,Good,Yes,07-01-1999
+F,Thyroid,Low,No,Fireboult,Atorvastatin,Yoga,5.7,Daily,Neutral,Other,2.98,Insomnia,6.2,Yes,Yes,Yoga,Smaller form factor,Walk,Multiple small meals,Never,Yes,Unknown,Low,Yes,20-09-1999
+M,COPD,Moderate,Yes,Xiaomi Band,None,None,5,Often,Spicy,Mediterranean,1.03,Interrupted,5.5,No,No,Other,More accurate heart-rate,Bike,2 meals/day,Never,No,Unknown,Low,Yes,28-03-1976
+F,None,High,No,Fireboult,None,Running,6.8,Rarely,Spicy,Low Sugar,2.97,Oversleeping,4.5,No,No,Other,Battery life improvement,Public Transport,3 meals/day,Only beverage,No,Low,Average,No,10-10-1938
+F,High Cholesterol,Low,Yes,Garmin,Insulin,Walking,4.3,Daily,Salty,Low Sodium,0.68,Oversleeping,4.6,No,Yes,Running,Glucose alerts,Walk,2 meals/day,Only beverage,No,Unknown,Average,No,25-10-1963
+Other,Thyroid,High,Yes,Apple Watch,None,None,9,Often,Mixed,Vegan,3.78,Insomnia,10.6,Yes,No,None,BP alerts,Public Transport,Intermittent fasting,Only beverage,No,Moderate,None,No,19-04-1952
+Other,Heart Disease,High,Yes,None,None,Swimming,5,Daily,Mixed,Mediterranean,2.3,Normal,5.4,Yes,Yes,Gym,None,Public Transport,2 meals/day,Regular,No,Unknown,Average,No,16-08-2002
+Other,Healthy,Moderate,No,Fireboult,None,Gym,5.5,Often,Neutral,Low Sugar,2.92,Insomnia,5,Yes,Yes,Gym,None,Bike,Multiple small meals,Never,No,Unknown,Average,Yes,14-01-1996
+F,Depression,Low,Yes,None,Lisinopril,Walking,5.6,Daily,Mixed,Vegetarian,2.88,Oversleeping,2,No,Yes,Running,None,Bike,Multiple small meals,Only beverage,Yes,Unknown,Low,Yes,10-07-1970
+Other,Arthritis,Moderate,Yes,None,None,Gym,4.2,Often,Salty,Vegan,3.18,Oversleeping,5.1,No,No,Cycling,Help with stress monitoring,Walk,2 meals/day,Never,Yes,Moderate,None,Yes,19-04-2000
+F,Thyroid,Moderate,No,Fireboult,Lisinopril,Running,4.9,Never,Sugar,Mediterranean,2.65,Normal,3.6,Yes,Yes,Running,More accurate heart-rate,Car,3 meals/day,Sometimes skipped,Yes,Unknown,None,Yes,04-06-1983
+Other,COPD,Moderate,No,Fireboult,None,Cycling,6.6,Often,Spicy,Low Sugar,0.71,Interrupted,7.9,No,No,Running,Smaller form factor,Car,Intermittent fasting,Only beverage,No,Moderate,Low,No,01-07-1951
+M,Diabetes,Moderate,Yes,Glucometer,None,Gym,5.2,Rarely,Spicy,Vegetarian,3.73,Insomnia,2,Yes,Yes,Cycling,More accurate heart-rate,Walk,2 meals/day,Sometimes skipped,No,Moderate,Low,No,17-05-1936
+Other,Asthma,High,Yes,Glucometer,Atorvastatin,Gym,6.3,Sometimes,Spicy,Low Sugar,1.76,Oversleeping,6.1,No,Yes,Yoga,Sleep tracking,Public Transport,Intermittent fasting,Only beverage,Yes,Moderate,Average,Yes,25-05-1958
+Other,Diabetes,Low,No,Fireboult,None,Walking,6.5,Sometimes,Spicy,Other,3.88,Oversleeping,6.1,No,Yes,Other,None,Bike,3 meals/day,Regular,Yes,High,Good,No,03-05-1947
+M,High Cholesterol,Moderate,Yes,Samsung Galaxy Watch,Levothyroxine,None,4.1,Sometimes,Neutral,Low Sugar,0.56,Oversleeping,9.9,Yes,Yes,Running,BP alerts,Other,2 meals/day,Sometimes skipped,Yes,Low,Low,No,26-04-2006
+F,Asthma,High,Yes,Garmin,None,Swimming,7.2,Never,Sugar,Mediterranean,1.83,Oversleeping,1.6,Yes,No,Running,None,Car,Intermittent fasting,Regular,Yes,Moderate,Average,No,28-04-1959
+Other,Healthy,Low,No,Fireboult,Lisinopril,Swimming,8.1,Often,Sugar,Low Sugar,1.07,Interrupted,7.2,No,Yes,Other,Smaller form factor,Car,2 meals/day,Regular,No,High,Good,No,29-10-1955
+Other,Depression,Low,No,Fireboult,Salbutamol,Yoga,8.7,Often,Salty,Mediterranean,0.8,Insomnia,9.8,Yes,Yes,Running,Battery life improvement,Bike,Multiple small meals,Sometimes skipped,No,Low,Low,Yes,18-03-1943
+F,Hypertension,Low,Yes,Apple Watch,None,Yoga,6,Never,Sugar,Keto,2.44,Insomnia,10.5,Yes,No,Cycling,BP alerts,Other,2 meals/day,Sometimes skipped,No,Moderate,Average,No,06-01-1962
+M,Heart Disease,Moderate,No,Fireboult,Atorvastatin,Walking,7.6,Often,Neutral,Low Sodium,2.1,Interrupted,4.4,No,Yes,Yoga,Help with stress monitoring,Public Transport,Multiple small meals,Never,No,Moderate,Low,No,12-02-1989
+M,Heart Disease,High,No,Fireboult,Atorvastatin,Swimming,7.9,Sometimes,Sugar,Low Sodium,2.57,Interrupted,8.5,Yes,Yes,Other,None,Bike,Multiple small meals,Never,Yes,Unknown,None,Yes,27-10-1991
+Other,Arthritis,Moderate,Yes,Samsung Galaxy Watch,None,Yoga,6.5,Often,Neutral,Normal,3.27,Insomnia,8.7,Yes,Yes,Gym,Smaller form factor,Bike,3 meals/day,Only beverage,No,Unknown,Good,Yes,06-11-1943
+Other,COPD,High,Yes,Samsung Galaxy Watch,Lisinopril,Running,9,Often,Sugar,Low Sugar,1.96,Normal,2.3,Yes,Yes,Yoga,Battery life improvement,Public Transport,Multiple small meals,Sometimes skipped,No,Low,None,Yes,23-04-1974
+F,Hypertension,Low,No,Fireboult,None,Cycling,5.2,Rarely,Neutral,Vegan,1.66,Oversleeping,11.5,Yes,No,Other,Glucose alerts,Bike,Multiple small meals,Only beverage,Yes,Moderate,None,No,19-11-1969
+F,Hypertension,High,Yes,Apple Watch,Metformin,Running,7.4,Often,Neutral,Keto,2.59,Oversleeping,7.5,No,Yes,Yoga,None,Other,2 meals/day,Never,Yes,Moderate,Low,Yes,27-05-1956
+F,Thyroid,Moderate,No,Fireboult,None,Gym,4.9,Daily,Salty,Vegan,2.21,Interrupted,3.1,No,No,Yoga,More accurate heart-rate,Car,2 meals/day,Sometimes skipped,No,Unknown,None,No,15-04-1972
+M,Asthma,Moderate,Yes,Garmin,Amlodipine,Yoga,7.7,Often,Neutral,Vegetarian,2.5,Insomnia,9.5,No,Yes,None,More accurate heart-rate,Car,2 meals/day,Only beverage,Yes,Moderate,Low,Yes,07-05-1975
+F,Asthma,Low,No,Fireboult,None,Walking,7.1,Rarely,Salty,Normal,2.5,Insomnia,7.6,Yes,No,Other,Battery life improvement,Public Transport,Intermittent fasting,Regular,Yes,Unknown,Good,No,14-10-2012
+M,Asthma,High,No,Fireboult,None,Running,7.1,Often,Mixed,Vegetarian,2.72,Normal,5.4,No,No,Yoga,None,Car,Intermittent fasting,Regular,Yes,Unknown,Low,Yes,20-05-2006
+F,High Cholesterol,Moderate,No,Fireboult,None,Walking,6.8,Often,Spicy,Normal,0.66,Oversleeping,1.2,Yes,No,Running,Help with stress monitoring,Bike,2 meals/day,Never,Yes,Low,Good,No,18-06-1957
+M,Heart Disease,High,Yes,Glucometer,Amlodipine,None,4.7,Rarely,Neutral,Other,0.53,Insomnia,10,No,Yes,Other,Glucose alerts,Car,3 meals/day,Sometimes skipped,No,High,Good,Yes,10-02-1963
+F,Diabetes,High,Yes,Fitbit,Lisinopril,Gym,5.8,Rarely,Salty,Mediterranean,2.66,Oversleeping,10.5,Yes,Yes,Running,Glucose alerts,Walk,Multiple small meals,Never,No,Low,Average,Yes,06-11-1959
+Other,COPD,Moderate,Yes,Garmin,None,Walking,7.7,Sometimes,Sugar,Low Sodium,2.23,Normal,3.7,Yes,No,Running,Smaller form factor,Public Transport,2 meals/day,Only beverage,No,Low,Average,No,11-02-2004
+M,Asthma,Low,Yes,Glucometer,None,Yoga,7.8,Often,Mixed,Vegetarian,2.74,Interrupted,4.1,No,Yes,Gym,Glucose alerts,Other,Intermittent fasting,Only beverage,Yes,Low,None,Yes,12-03-1940
+M,COPD,Low,No,Fireboult,Lisinopril,Cycling,4.1,Often,Spicy,Low Sugar,1.08,Interrupted,9.2,No,Yes,Other,BP alerts,Walk,Intermittent fasting,Only beverage,No,High,Low,Yes,06-07-1979
+M,COPD,Low,No,Fireboult,None,Yoga,7.4,Never,Salty,Normal,0.65,Normal,3.7,No,No,Gym,Glucose alerts,Walk,Multiple small meals,Sometimes skipped,No,Moderate,None,No,03-05-1959
+M,Healthy,Low,Yes,None,None,Swimming,5.4,Sometimes,Spicy,Vegetarian,2.44,Normal,5.1,No,No,Yoga,Sleep tracking,Car,Intermittent fasting,Only beverage,Yes,Moderate,Average,Yes,15-10-1971
+F,Healthy,Moderate,Yes,Glucometer,Insulin,Gym,6.5,Never,Salty,Low Sugar,0.83,Interrupted,10.9,No,Yes,Other,Smaller form factor,Car,3 meals/day,Regular,Yes,Unknown,Good,Yes,09-01-1974
