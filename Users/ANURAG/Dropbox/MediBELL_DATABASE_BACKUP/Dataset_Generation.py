@@ -1,35 +1,145 @@
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import LabelEncoder
 
-# Load dataset
-df = pd.read_csv("Final_Augmented_dataset_Diseases_and_Symptoms.csv")
+np.random.seed(42)
 
-# Encode target
-le = LabelEncoder()
-df['disease'] = le.fit_transform(df['disease'])
+# -------------------------------
+# Define diseases (REAL LABELS)
+# -------------------------------
+DISEASES = [
+    "Common Cold",
+    "Pneumonia",
+    "Asthma",
+    "Influenza",
+    "Allergy",
+    "COVID-19",
+    "Bronchitis",
+    "Tuberculosis"
+]
 
-# Shuffle dataset
-df = df.sample(frac=1, random_state=42).reset_index(drop=True)
+N_SAMPLES = 5000  # total rows
 
-# Get unique diseases
-diseases = df['disease'].unique()
 
-# Split diseases into 3 groups (non-IID)
-disease_splits = np.array_split(diseases, 3)
+def generate_sample(disease):
+    """Generate one patient record based on disease"""
 
-clients = {}
+    base = {
+        "fever": 0,
+        "cough": 0,
+        "fatigue": 0,
+        "breathlessness": 0,
+        "chest_pain": 0,
+        "oxygen_level": np.random.randint(92, 100),
+        "age": np.random.randint(10, 80),
+        "gender": np.random.choice(["Male", "Female"])
+    }
 
-for i, d_split in enumerate(disease_splits):
-    # Select only subset of diseases for each client
-    client_df = df[df['disease'].isin(d_split)]
+    # Disease-specific patterns
+    if disease == "Pneumonia":
+        base.update({
+            "fever": 1,
+            "cough": 1,
+            "breathlessness": 1,
+            "chest_pain": 1,
+            "oxygen_level": np.random.randint(85, 92)
+        })
 
-    # Sample to control size
-    client_df = client_df.sample(n=50000, replace=True, random_state=42+i)
+    elif disease == "Asthma":
+        base.update({
+            "breathlessness": 1,
+            "cough": 1
+        })
 
-    clients[f'client_{i+1}'] = client_df
+    elif disease == "Influenza":
+        base.update({
+            "fever": 1,
+            "fatigue": 1,
+            "cough": 1
+        })
 
-    # Save dataset
-    client_df.to_csv(f'client_{i+1}.csv', index=False)
+    elif disease == "COVID-19":
+        base.update({
+            "fever": 1,
+            "cough": 1,
+            "fatigue": 1,
+            "breathlessness": 1,
+            "oxygen_level": np.random.randint(85, 93)
+        })
 
-print("✅ 3 Non-IID Federated Datasets Generated")
+    elif disease == "Tuberculosis":
+        base.update({
+            "cough": 1,
+            "fatigue": 1,
+            "chest_pain": 1
+        })
+
+    elif disease == "Bronchitis":
+        base.update({
+            "cough": 1,
+            "fatigue": 1
+        })
+
+    elif disease == "Allergy":
+        base.update({
+            "cough": 1
+        })
+
+    elif disease == "Common Cold":
+        base.update({
+            "cough": 1,
+            "fever": np.random.choice([0, 1])
+        })
+
+    base["disease"] = disease
+
+    return base
+
+
+def generate_dataset():
+    data = []
+
+    # Balanced distribution
+    samples_per_class = N_SAMPLES // len(DISEASES)
+
+    for disease in DISEASES:
+        for _ in range(samples_per_class):
+            data.append(generate_sample(disease))
+
+    df = pd.DataFrame(data)
+
+    # Shuffle
+    df = df.sample(frac=1).reset_index(drop=True)
+
+    return df
+
+
+# -------------------------------
+# Create multiple client datasets
+# -------------------------------
+def create_federated_clients(df):
+
+    # Split into 3 clients (non-IID)
+    client_1 = df[df["disease"].isin(["Pneumonia", "Asthma", "COVID-19"])]
+    client_2 = df[df["disease"].isin(["Influenza", "Allergy", "Common Cold"])]
+    client_3 = df[df["disease"].isin(["Bronchitis", "Tuberculosis", "COVID-19"])]
+
+    client_1.to_csv("data/client_1.csv", index=False)
+    client_2.to_csv("data/client_2.csv", index=False)
+    client_3.to_csv("data/client_3.csv", index=False)
+
+    print("Datasets generated:")
+    print("Client 1:", client_1["disease"].value_counts())
+    print("Client 2:", client_2["disease"].value_counts())
+    print("Client 3:", client_3["disease"].value_counts())
+
+
+# -------------------------------
+# RUN
+# -------------------------------
+if __name__ == "__main__":
+
+    df = generate_dataset()
+    create_federated_clients(df)
+
+    print("\nSample:")
+    print(df.head())
