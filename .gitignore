@@ -29,3 +29,4 @@ blockchain/audit_trail.json
 
 # MCP Server Context Metadata
 .project-context.json
+.project_brain/
