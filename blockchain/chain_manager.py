@@ -68,8 +68,8 @@ class ChainManager:
                 ).build_transaction({
                     'from': account.address,
                     'nonce': nonce,
-                    'gas': 200000,
-                    'gasPrice': w3.eth.gas_price
+                    'gas': 500000,
+                    'gasPrice': int(w3.eth.gas_price * 1.2)
                 })
                 
                 # Sign and send transaction

@@ -93,10 +93,23 @@ def deploy_contract():
     if use_raw_tx:
         # Sign construction transaction
         nonce = w3.eth.get_transaction_count(deployer_address)
+        
+        # Fetch block parameters for EIP-1559
+        latest_block = w3.eth.get_block('latest')
+        base_fee = latest_block.get('baseFeePerGas', 1000000000)
+        
+        # Configure high priority fees to override mempool transactions (3.0 Gwei priority, 10.0 Gwei max)
+        max_priority_fee = 3000000000
+        max_fee = 10000000000
+        
         construct_tx = MediBellRegistry.constructor().build_transaction({
             'from': deployer_address,
             'nonce': nonce,
-            'gas': 1000000
+            'gas': 1500000,
+            'maxFeePerGas': max_fee,
+            'maxPriorityFeePerGas': max_priority_fee,
+            'type': '0x2',
+            'chainId': 11155111
         })
         signed_tx = w3.eth.account.sign_transaction(construct_tx, private_key=PRIVATE_KEY)
         tx_hash_bytes = w3.eth.send_raw_transaction(signed_tx.raw_transaction)
