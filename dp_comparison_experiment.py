@@ -65,7 +65,7 @@ for eps in epsilons:
     print(f"Running epsilon = {eps}")
 
     acc1 = train_model1_temp(dataset_1, eps)
-    acc2 = train_model2(dataset_2, eps)
+    _, acc2 = train_model2(dataset_2, eps)
 
     acc_1.append(acc1)
     acc_2.append(acc2)
@@ -78,14 +78,21 @@ for eps in epsilons:
 # ===============================
 # PLOT
 # ===============================
-plt.figure()
+try:
+    import os
+    os.makedirs("visualizations", exist_ok=True)
+    plt.figure()
 
-plt.plot(epsilons, acc_1, marker='o')
-plt.plot(epsilons, acc_2, marker='o')
+    plt.plot(epsilons, acc_1, marker='o')
+    plt.plot(epsilons, acc_2, marker='o')
 
-plt.xlabel("Privacy Level (Epsilon)")
-plt.ylabel("Accuracy (%)")
-plt.title("Privacy vs Accuracy (Two Datasets)")
-plt.legend(["Clinical Dataset", "Survey Dataset"])
+    plt.xlabel("Privacy Level (Epsilon)")
+    plt.ylabel("Accuracy (%)")
+    plt.title("Privacy vs Accuracy (Two Datasets)")
+    plt.legend(["Clinical Dataset", "Survey Dataset"])
 
-plt.show()
+    plt.savefig("visualizations/dp_comparison_experiment.png")
+    print("Plot saved to → visualizations/dp_comparison_experiment.png")
+except Exception as e:
+    print(f"Warning: Plot generation skipped due to environment limits: {e}")
+
