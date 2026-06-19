@@ -43,7 +43,6 @@ The entire blockchain audit infrastructure was isolated to a dedicated module to
 * [docs/ARCHITECTURE.md](file:///home/dev/Desktop/projects/MediBELL_DP/docs/ARCHITECTURE.md) — System diagram and schemas.
 * [docs/DEPLOYMENT.md](file:///home/dev/Desktop/projects/MediBELL_DP/docs/DEPLOYMENT.md) — Sepolia / Pinata deployment guide.
 * [docs/AUDIT_FLOW.md](file:///home/dev/Desktop/projects/MediBELL_DP/docs/AUDIT_FLOW.md) — Dynamic / manual verification walkthroughs.
-* [docs/MILESTONES.md](file:///home/dev/Desktop/projects/MediBELL_DP/docs/MILESTONES.md) — Phase roadmaps.
 * [docs/VERIFICATION.md](file:///home/dev/Desktop/projects/MediBELL_DP/docs/VERIFICATION.md) — Live transaction hashes and output screenshots/evidence.
 
 ### 🔧 Existing Files Modified

@@ -1,8 +1,7 @@
 # Pull Request Summary: Blockchain & IPFS Model Auditing Layer
 
 **Author:** Pranjal Yadav  
-**Contact:** 2k24.cs1l.2410719@gmail.com | +91919920362  
-**Links:** [GitHub Profile](https://github.com/pranjal2410719) | [LinkedIn Profile](https://www.linkedin.com/in/-pranjal22/)
+**GitHub:** pranjal2410719  
 
 ---
 
