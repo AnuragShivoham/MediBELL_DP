@@ -90,3 +90,34 @@ for r in range(num_rounds):
         )
 ```
 This keeps the core FL logic clean while adding a secure, automated audit trail for auditing global healthcare models.
+
+---
+
+## 5. Finalized Implementation Architecture
+
+The blockchain and IPFS audit trial has been successfully moved from simulated modes to real production environments.
+
+### A. IPFS Layer (Pinata API)
+- **Class:** `IPFSManager` inside [ipfs_manager.py](file:///home/dev/Desktop/projects/MediBELL_DP/blockchain/ipfs_manager.py).
+- **Core Functionality:**
+  - **Upload (`upload_model`):** Sends the serialized round weights (`.pkl` format) to the Pinata Pinning API, returning a cryptographic Content Identifier (CID) like `Qmbozu5G2J4NGsaVpB9CGmn7S4peWiM4ra8c1Ry6TxgdHP`.
+  - **Download (`download_model`):** Leverages multiple public IPFS gateways (`gateway.pinata.cloud`, `cloudflare-ipfs.com`, `ipfs.io`) to retrieve the model artifact by its CID.
+  - **Integrity Check (`verify_model_integrity`):** Calculates the SHA256 checksum of the original model file and compares it against the SHA256 of the file retrieved from IPFS, guaranteeing zero content mutation.
+
+### B. Blockchain Layer (Sepolia Ethereum Testnet)
+- **Smart Contract:** [MediBellRegistry.sol](file:///home/dev/Desktop/projects/MediBELL_DP/blockchain/contracts/MediBellRegistry.sol) (compiled with Solidity `0.8.19` for EVM compatibility).
+  - Deployed Address: `0xd4015AD2259801a6E9b2A66B5d38Ac79Db111A88` on Sepolia.
+  - **Duplicate Protection:** Reverts any attempt to override an already registered round via `require(rounds[_round].timestamp == 0, "Round already registered")`.
+- **EIP-1559 Fee Optimization:**
+  - Deployment gas limit is set to `1,500,000` (init and bytecode storage consumes `787,904` gas).
+  - Uses explicit EIP-1559 parameters (`maxFeePerGas = 10 Gwei` and `maxPriorityFeePerGas = 3 Gwei`) to guarantee priority in block packing and overwrite any stuck transactions.
+  - Round registration uses `500,000` gas limit to prevent out-of-gas errors when writing struct records and dynamic string payloads on-chain.
+
+### C. Live Audit Verification API
+- **Endpoint:** `GET /audit` inside [app.py](file:///home/dev/Desktop/projects/MediBELL_DP/app.py).
+- **Verification Flow:**
+  1. Reads local transaction records from `blockchain/audit_trail.json`.
+  2. Queries the Sepolia smart contract dynamically using the `getRound(round_num)` function.
+  3. Verifies that the on-chain CID, accuracy, and timestamp match the locally recorded ones.
+  4. Appends `"on_chain_verified": true` dynamically to the API response if all checks pass.
+
