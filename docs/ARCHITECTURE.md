@@ -1,5 +1,7 @@
 # MediBELL: Decentralized Audit Layer Architecture
 
+![MediBELL Decentralized Audit Layer Architecture](images/architecture.jpg)
+
 This document details the architecture of the Blockchain & IPFS Audit Trail layer for the MediBELL system, highlighting the model-to-ledger pipeline, design constraints, and data flow.
 
 ---

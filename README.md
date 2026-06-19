@@ -8,6 +8,8 @@ MediBELL is a cutting-edge healthcare AI system designed with a focus on **IoT +
 
 - **Local Differential Privacy (LDP)**: Protects individual patient records at the edge using the **Laplace Mechanism** (for numeric vitals like age, heart rate, BP) and **Randomized Response** (for binary/categorical attributes like gender, smoker status, and symptom profiles).
 - **Advanced Federated Learning (FL)**: Supports decentralized model training across multiple local nodes using the **Federated Averaging (FedAvg)** aggregation algorithm.
+- **Decentralized Audit Trail (Ethereum Sepolia)**: Immutably anchors model training metrics, accuracy, and timestamps on-chain, preventing retroactive data manipulation.
+- **Off-Chain IPFS Model Provenance (Pinata)**: Pins serialized Multi-Layer Perceptron (MLP) weights off-chain on the IPFS network, utilizing cryptographic Content Identifiers (CIDs) and automated SHA256 integrity validation.
 - **Deep MLP Architecture**: Leverages Multi-Layer Perceptrons (128-64-32 architecture) to capture complex non-linear symptom combinations and disease correlations.
 - **IoT Integration**: Built to simulate and process continuous high-velocity health streams from wearables (Heart Rate, BP, SpO2, etc.).
 
@@ -15,9 +17,12 @@ MediBELL is a cutting-edge healthcare AI system designed with a focus on **IoT +
 
 ## 🛠 Tech Stack
 
+- **Decentralized Ledgers**: Ethereum (Sepolia Testnet, Ganache local RPC, Solidity 0.8.19)
+- **Web3 Interface**: Web3.py, Pinata IPFS Gateway REST API
 - **ML/DL Frameworks**: Scikit-Learn (SGDClassifier, MLPClassifier, RandomForestClassifier)
 - **Core Logic**: NumPy, Pandas, Joblib, PyYAML
 - **Visualization**: Matplotlib
+
 
 ---
 
