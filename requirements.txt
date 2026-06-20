@@ -4,3 +4,11 @@ scikit-learn
 joblib
 pyyaml
 matplotlib==3.9.2
+requests
+web3
+python-dotenv
+flask
+
+
+
+

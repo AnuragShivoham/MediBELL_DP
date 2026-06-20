@@ -10,7 +10,11 @@ def partition_data(csv_path, num_clients=3):
     # Shuffle data
     df = df.sample(frac=1, random_state=42).reset_index(drop=True)
     
-    # Split into partitions
-    partitions = np.array_split(df, num_clients)
+    # Split into partitions using pandas native slicing
+    chunk_size = len(df) // num_clients
+    partitions = [
+        df.iloc[i * chunk_size : (i + 1) * chunk_size].copy() 
+        for i in range(num_clients)
+    ]
     
     return partitions

@@ -1,6 +1,12 @@
+import os
+import sys
 import joblib
 import pandas as pd
 import numpy as np
+
+# Add project root to path
+sys.path.append(os.getcwd())
+
 from sklearn.neural_network import MLPClassifier
 from sklearn.linear_model import SGDClassifier
 from utils.preprocessing import apply_dp
@@ -11,11 +17,18 @@ def load_and_predict():
     print("="*40)
 
     # 1. Load Model Data
-    model_path = "fl_advanced/global_model_advanced.pkl"
-    try:
-        data = joblib.load(model_path)
-    except:
-        print("Error: Model file not found. Run simulation first (Option 2).")
+    model_paths = ["fl_advanced/global_model_advanced.pkl", "fl_advanced/production_global_model.pkl"]
+    data = None
+    for path in model_paths:
+        try:
+            data = joblib.load(path)
+            print(f"Loaded model from: {path}")
+            break
+        except Exception:
+            continue
+
+    if data is None:
+        print("Error: Model file not found. Run simulation first.")
         return
 
     weights = data['weights']
@@ -25,11 +38,24 @@ def load_and_predict():
 
     # 2. Re-initialize model architecture
     if model_type == "mlp":
-        model = MLPClassifier(hidden_layer_sizes=(32, 16))
+        hidden_sizes = tuple(coef.shape[1] for coef in weights['coefs'][:-1])
+        model = MLPClassifier(hidden_layer_sizes=hidden_sizes)
+        # Fit dummy data to initialize scikit-learn internals
+        n_features = weights['coefs'][0].shape[0]
+        dummy_X = np.zeros((len(weights['classes']), n_features))
+        dummy_y = weights['classes']
+        model.fit(dummy_X, dummy_y)
+        # Overwrite with aggregated weights
         model.coefs_ = weights['coefs']
         model.intercepts_ = weights['intercepts']
     else:
         model = SGDClassifier(loss='log_loss')
+        # Fit dummy data to initialize scikit-learn internals
+        n_features = weights['coef'].shape[1]
+        dummy_X = np.zeros((len(weights['classes']), n_features))
+        dummy_y = weights['classes']
+        model.fit(dummy_X, dummy_y)
+        # Overwrite with aggregated weights
         model.coef_ = weights['coef']
         model.intercept_ = weights['intercept']
     
@@ -75,6 +101,7 @@ def load_and_predict():
     # 5. Preprocess (DP + Scaling)
     df_dp = apply_dp(df, epsilon=1.0)
     X_num = df_dp.drop(columns=["gender"]) 
+    X_num = X_num[list(scaler.feature_names_in_)]
     X_scaled = scaler.transform(X_num)
 
     # 6. Predict

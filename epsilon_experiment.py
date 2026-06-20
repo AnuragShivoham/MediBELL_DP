@@ -81,24 +81,31 @@ width = 0.35
 # ==================================================
 # GROUPED BAR GRAPH
 # ==================================================
-plt.figure(figsize=(8, 5))
+try:
+    import os
+    os.makedirs("visualizations", exist_ok=True)
+    plt.figure(figsize=(8, 5))
 
-plt.bar(x - width/2, dp_percent, width, label="With DP")
-plt.bar(x + width/2, baseline_percent, width, label="Without DP")
+    plt.bar(x - width/2, dp_percent, width, label="With DP")
+    plt.bar(x + width/2, baseline_percent, width, label="Without DP")
 
-plt.xlabel("Epsilon (Privacy Level)")
-plt.ylabel("Accuracy (%)")
-plt.title("Privacy vs Accuracy Tradeoff")
-plt.xticks(x, epsilons)
-plt.ylim(0, 100)
-plt.legend()
+    plt.xlabel("Epsilon (Privacy Level)")
+    plt.ylabel("Accuracy (%)")
+    plt.title("Privacy vs Accuracy Tradeoff")
+    plt.xticks(x, epsilons)
+    plt.ylim(0, 100)
+    plt.legend()
 
-# Add value labels
-for i, v in enumerate(dp_percent):
-    plt.text(i - width/2, v + 1, f"{v:.1f}%", ha='center')
+    # Add value labels
+    for i, v in enumerate(dp_percent):
+        plt.text(i - width/2, v + 1, f"{v:.1f}%", ha='center')
 
-for i, v in enumerate(baseline_percent):
-    plt.text(i + width/2, v + 1, f"{v:.1f}%", ha='center')
+    for i, v in enumerate(baseline_percent):
+        plt.text(i + width/2, v + 1, f"{v:.1f}%", ha='center')
 
-plt.tight_layout()
-plt.show()
+    plt.tight_layout()
+    plt.savefig("visualizations/epsilon_tradeoff.png")
+    print("Plot saved to → visualizations/epsilon_tradeoff.png")
+except Exception as e:
+    print(f"Warning: Plot generation skipped due to environment limits: {e}")
+
